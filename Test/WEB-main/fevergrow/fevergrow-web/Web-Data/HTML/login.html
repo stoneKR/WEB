@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>login page</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form method="post" action="/login_check.php">
+        <div>
+            <label for="id">ID </label>
+            <input type="text" name="id">
+        </div>
+        <div>
+            <label for="pw">PW</label>
+            <input type="text" name="pw"/>
+        </div>
+
+        <div class="button">
+            <button type="submit"> login </button>
+        </div>
+        </form>
+        <button onlick="location.href='signup.html' "> sing up </button>
+    </body>
+</html>
+
+<!-- 회원 정보가 이미 등록되어 있다면 ID,PW를 입력한 후 login 버튼 클릭 후 login_check
+     회원 정보가 등록되어 있지 않다면 sing up 버튼 클릭 후 회원가입 페이지로 이동
+-->
