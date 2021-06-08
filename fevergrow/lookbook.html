@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LookBook Page</title>
+    <link rel="stylesheet" href="lookbook.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+
+
+
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo_white.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="lookbook.html">LOOK BOOK</a></li>
+                    <li><a href="campain.html">CAMPAIN</a></li>
+                    <li><a href="company.html">COMPANY</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="singin_up.html">MY PAGE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+
+
+        <div class="text-box">
+
+            <section class="course">
+                <h1>Course We Offer</h1>
+                <p>Lorem ipsum bolor sit amet, consectetur adipiscing elit.</p>
+            
+            
+                <div class=row>
+                    <div class="course-col">
+                        <h3>COLLECTION</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Pellentesque aliquet turpis nulla, eleifend faucibus est
+                            sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus
+                            Donec sit.</p>
+                    </div>
+                    <div class="course-col">
+                        <h3>HIGH STANDARD</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Pellentesque aliquet turpis nulla, eleifend faucibus est
+                            sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus
+                            Donec sit.</p>
+                    </div>
+                    <div class="course-col">
+                        <h3>STANDARD</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Pellentesque aliquet turpis nulla, eleifend faucibus est
+                            sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus
+                            Donec sit.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <a href="#target1" class="hero-btn">View more Shop</a>
+        </div>
+
+    </section>
+
+
+        
+        
+
+    
+    <br><br><br><br><br><div id="target1"><br><br><br><br>
+    
+<!-- campus -->
+<section class="campus">
+    
+    <h1>Fever Grow Line-Up</h1>
+    <p>Loren ipsum dolor sit amet, consectetur adipiscing elit. </p>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="textbox-01.png">
+            <div class="layer">
+                <h3>COLLECTION</h3>
+            </div>
+        </div>
+
+        <div class="campus-col">
+            <img src="textbox-01.png">
+            <div class="layer">
+                <h3>HIGH STANDARD</h3>
+            </div>
+        </div>
+
+        <div class="campus-col">
+            <img src="textbox-01.png">
+            <div class="layer">
+                <h3>STANDARD</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+<br><br><br><br><br><br><br><br>
+
+
+
+<!-- Footer -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>02-2662-3311</p>
+    <p>MON-FRI , AM 9:30 - PM 6:00 | Lunch : PM 12:00 - 1:00 | Day Off : SAT , SUN & HOLIDAY <br>
+        ACCOUNT NUMBER : KB BANK 110-432-4375-24 | NAME : 이은지 <br>
+
+        COMPANY : FEVERGROW(피버그로우)     | CEO : 이은지 <br>
+        COMPANY_REGNO : 898-07-01763       | NETWORK_REGNO : 2020직접오남0331 <br>
+        TEL : 02-2662-3311  |   ADD : 07807 서울특별시 강서구 마곡중앙로 59-11(마곡동) 엠비즈 타워 610 <br>
+        CPO : 이은지 (EUNJILEE@GMAIL.COM) <br>
+        CONTACT FOR MORE INFORMATION. <br>
+    </p>
+
+        <div class="icons">
+            <a href="https://www.instagram.com/fevergrow/"><i class="fa fa-facebook"></a></i>
+            <a href="https://www.instagram.com/fevergrow/"><i class="fa fa-instagram"></a></i>
+        </div>
+        <p><i class="fa fa-heart-o"></i>  Fever Grow  <i class="fa fa-heart-o"></i></p>
+</section>
+
+
+
+
+<!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){            
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+        });
+        });
+    </script>
+
+
+</body>
+</html>
+
+
