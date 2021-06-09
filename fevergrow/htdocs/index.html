@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Fever Grow Landing Page</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h1 class="logo">Fever Grow</h1>
+            <div class="toggle"></div>
+        </header>
+        <video src="image/explore.mp4" muted loop autoplay></video>
+
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring The World</h3>
+            <p>Testttttttttttttttttttttttttttttttttttttttttttttttttttt
+                tttttttttttttttttttttttttttttttttttttttttttttttttttttt
+                tttttttttttttttttttttttttttttttttttttttttttttttttttttt
+            </p>
+            <a href='lib/shop.html'>View more</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="https://www.instagram.com/fevergrow/"><img src="facebook.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/fevergrow/"><img src="instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="lib/shop.html">SHOP</a></li>
+            <li><a href="/lib/lookbook.html">LOOK BOOK</a></li>
+            <li><a href="/lib/campain.html">CAMPAIN</a></li>
+            <li><a href="/lib/company.html">COMPANY</a></li>
+            <li><a href="/lib/community.html">COMMUNITY</a></li>
+            <li><a href="/lib/singin_up.html">MY PAGE</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
