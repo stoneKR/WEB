@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/lookbook.css">
+    <link rel="stylesheet" href="../css/jquery.flipster.min.css">
+    <title>LookBook</title>
+</head>
+<body>
+
+    <section class="showcase">
+    <header>
+        <h1 class="logo">Fever Grow</h1>
+        <div class="toggle"></div>
+    </header>
+
+
+    <div class="overlay"></div>
+
+    
+    <div class="hero">
+        <div class="carousel">
+            <ul>
+                <li><img src="../image/lookbook-01.jpg"></li>
+                <li><img src="../image/lookbook-02.jpg"></li>
+                <li><img src="../image/lookbook-03.jpg"></li>
+                <li><img src="../image/lookbook-04.jpg"></li>
+                <li><img src="../image/lookbook-05.jpg"></li>
+                <li><img src="../image/lookbook-06.jpg"></li>
+                <li><img src="../image/lookbook-07.jpg"></li>
+                <li><img src="../image/lookbook-08.jpg"></li>
+                <li><img src="../image/lookbook-09.jpg"></li>
+                <li><img src="../image/lookbook-10.jpg"></li>
+            </ul>
+        </div>
+    </div>
+     
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.flipster.min.js"></script>
+
+    <script>
+        $('.carousel').flipster({
+            style:'carousel',
+            spacing: -0.3 ,
+        });
+    </script>
+
+
+</section>
+
+<div class="menu">
+    <ul>
+        <li><a href="../lib/shop.html">SHOP</a></li>
+        <li><a href="../lib/lookbook.html">LOOK BOOK</a></li>
+        <li><a href="../lib/campain.html">CAMPAIN</a></li>
+        <li><a href="../lib/company.html">COMPANY</a></li>
+        <li><a href="../lib/community.html">COMMUNITY</a></li>
+        <li><a href="../lib/singin_up.html">MY PAGE</a></li>
+    </ul>
+</div>
+
+<script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+    })
+</script>
+
+</body>
+</html>
