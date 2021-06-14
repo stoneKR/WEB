@@ -243,7 +243,7 @@ form.sign-in-form {
   pointer-events: all;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 800px) {
   .container {
     min-height: 800px;
     height: 100vh;
@@ -346,7 +346,7 @@ form.sign-in-form {
   }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 800px) {
   form {
     padding: 0 1.5rem;
   }

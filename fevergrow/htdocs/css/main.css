@@ -27,6 +27,8 @@
     overflow: visible;
 }
 
+
+
 .carousel img {
     -webkit-box-reflect: below 20px linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1));
 }
@@ -215,7 +217,7 @@
 }
 
 
-@media(max-width: 798px) {
+@media(max-width: 700px) {
     .showcase, 
     .showcase header{
         padding: 40px;
